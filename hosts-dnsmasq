@@ -1,5 +1,5 @@
-192.168.1.250    test1.example.com
-192.168.11.9     gabriel2.lan
+172.26.13.154    iwasevpc
+192.168.11.28    gabriel2.lan
 192.168.11.19    ubuntu20-playground.lan
 192.168.11.13    nuc11.lan
 192.168.11.13    localstack.nuc11.lan
