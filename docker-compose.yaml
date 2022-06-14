@@ -1,0 +1,18 @@
+version: "3.5"
+services:
+  dnsmasq:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+      - "5353:5353/tcp"
+        #- "192.168.11.13:53:53/udp"
+        #- "192.168.11.13:53:53/tcp"
+        #- "192.168.11.13:5353:5353/tcp"
+    volumes:
+      - $PWD/dnsmasq.conf:/etc/dnsmasq.conf
+      - $PWD/hosts-dnsmasq:/etc/hosts-dnsmasq
+    cap_add:
+      - NET_ADMIN
