@@ -1,0 +1,11 @@
+[Unit]
+Description = dns service
+Requires=docker.service
+After=docker.service
+
+[Service]
+ExecStart = /simple-dns/service-entrypoint
+Type = simple
+
+[Install]
+WantedBy = multi-user.target

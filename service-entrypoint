@@ -1,0 +1,3 @@
+#!/bin/sh
+
+(cd /simple-dns/ && docker compose up --build)
